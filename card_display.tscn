@@ -1,0 +1,156 @@
+[gd_scene format=3 uid="uid://byx21u8wxin1r"]
+
+[ext_resource type="Texture2D" uid="uid://bpo4l0cuegrcp" path="res://background.png" id="1_7bi3o"]
+[ext_resource type="Script" uid="uid://drs11vc0mhild" path="res://card_display.gd" id="1_gg1uy"]
+[ext_resource type="Texture2D" uid="uid://bmaex5lxc6hqh" path="res://all the cards-Sheet.png" id="2_kniph"]
+[ext_resource type="Texture2D" uid="uid://dei8fw21rbo1o" path="res://nextpreviousbutton.png" id="4_li3i1"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_li3i1"]
+atlas = ExtResource("2_kniph")
+region = Rect2(1, 67, 48, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6gui5"]
+atlas = ExtResource("2_kniph")
+region = Rect2(1, 67, 48, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dtl4i"]
+atlas = ExtResource("2_kniph")
+region = Rect2(1, 67, 48, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_j5n3m"]
+atlas = ExtResource("2_kniph")
+region = Rect2(1, 67, 48, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_j7qq5"]
+atlas = ExtResource("2_kniph")
+region = Rect2(1, 67, 48, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_isdtq"]
+atlas = ExtResource("2_kniph")
+region = Rect2(1, 67, 48, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1856o"]
+atlas = ExtResource("2_kniph")
+region = Rect2(1, 67, 48, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wde0w"]
+atlas = ExtResource("2_kniph")
+region = Rect2(1, 67, 48, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_eqt8k"]
+atlas = ExtResource("2_kniph")
+region = Rect2(1, 67, 48, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gg1uy"]
+atlas = ExtResource("2_kniph")
+region = Rect2(1, 67, 48, 64)
+
+[node name="CardDisplay" type="StaticBody2D" unique_id=1910701278]
+script = ExtResource("1_gg1uy")
+
+[node name="window" type="Sprite2D" parent="." unique_id=903259804]
+modulate = Color(0.47569537, 0.49353904, 0.5507682, 1)
+texture = ExtResource("1_7bi3o")
+
+[node name="Card1" type="TextureButton" parent="." unique_id=1789064817]
+offset_left = -386.0
+offset_top = -189.0
+offset_right = -253.0
+offset_bottom = -11.666641
+texture_normal = SubResource("AtlasTexture_li3i1")
+stretch_mode = 0
+
+[node name="Card2" type="TextureButton" parent="." unique_id=10826984]
+offset_left = -226.0
+offset_top = -189.0
+offset_right = -93.0
+offset_bottom = -11.666641
+texture_normal = SubResource("AtlasTexture_6gui5")
+stretch_mode = 0
+
+[node name="Card3" type="TextureButton" parent="." unique_id=1936445004]
+offset_left = -66.0
+offset_top = -189.0
+offset_right = 67.0
+offset_bottom = -11.666641
+texture_normal = SubResource("AtlasTexture_dtl4i")
+stretch_mode = 0
+
+[node name="Card4" type="TextureButton" parent="." unique_id=739931457]
+offset_left = 94.0
+offset_top = -189.0
+offset_right = 227.0
+offset_bottom = -11.666641
+texture_normal = SubResource("AtlasTexture_j5n3m")
+stretch_mode = 0
+
+[node name="Card5" type="TextureButton" parent="." unique_id=52478041]
+offset_left = 254.0
+offset_top = -189.0
+offset_right = 387.0
+offset_bottom = -11.666641
+texture_normal = SubResource("AtlasTexture_j7qq5")
+stretch_mode = 0
+
+[node name="Card6" type="TextureButton" parent="." unique_id=1424684258]
+offset_left = -386.0
+offset_top = 6.0
+offset_right = -253.0
+offset_bottom = 183.33336
+texture_normal = SubResource("AtlasTexture_isdtq")
+stretch_mode = 0
+
+[node name="Card7" type="TextureButton" parent="." unique_id=960563889]
+offset_left = -226.0
+offset_top = 6.0
+offset_right = -93.0
+offset_bottom = 183.33336
+texture_normal = SubResource("AtlasTexture_1856o")
+stretch_mode = 0
+
+[node name="Card8" type="TextureButton" parent="." unique_id=403378317]
+offset_left = -66.0
+offset_top = 6.0
+offset_right = 67.0
+offset_bottom = 183.33337
+texture_normal = SubResource("AtlasTexture_wde0w")
+stretch_mode = 0
+
+[node name="Card9" type="TextureButton" parent="." unique_id=244689888]
+offset_left = 94.0
+offset_top = 6.0
+offset_right = 227.0
+offset_bottom = 183.33337
+texture_normal = SubResource("AtlasTexture_eqt8k")
+stretch_mode = 0
+
+[node name="Card0" type="TextureButton" parent="." unique_id=1612046083]
+offset_left = 254.0
+offset_top = 6.0
+offset_right = 387.0
+offset_bottom = 183.33337
+texture_normal = SubResource("AtlasTexture_gg1uy")
+stretch_mode = 0
+
+[node name="Previous" type="Button" parent="." unique_id=675071438]
+offset_left = -37.0
+offset_top = -267.0
+offset_right = 38.915497
+offset_bottom = -218.0
+text = " "
+icon = ExtResource("4_li3i1")
+flat = true
+icon_alignment = 1
+expand_icon = true
+
+[node name="Next" type="Button" parent="." unique_id=468979012]
+offset_left = 37.0
+offset_top = 267.0
+offset_right = 112.9155
+offset_bottom = 316.0
+rotation = 3.1415927
+text = " "
+icon = ExtResource("4_li3i1")
+flat = true
+icon_alignment = 1
+expand_icon = true

@@ -1,0 +1,80 @@
+[gd_scene format=3 uid="uid://c2rxa5bpqq43"]
+
+[ext_resource type="Texture2D" uid="uid://bpo4l0cuegrcp" path="res://background.png" id="1_oabld"]
+[ext_resource type="Script" uid="uid://c0cbhxq1p37h7" path="res://background.gd" id="2_xehqc"]
+[ext_resource type="Texture2D" uid="uid://bmaex5lxc6hqh" path="res://all the cards-Sheet.png" id="3_vvxqx"]
+[ext_resource type="PackedScene" uid="uid://d4mp655gdt1o5" path="res://player_1_deck.tscn" id="4_gjjrj"]
+[ext_resource type="PackedScene" uid="uid://d3851vdcbbjff" path="res://player_2_deck.tscn" id="5_vvxqx"]
+[ext_resource type="PackedScene" uid="uid://bcuwe1wyxb81h" path="res://player_3_deck.tscn" id="6_cdpnt"]
+[ext_resource type="PackedScene" uid="uid://xw7pcjfwl0ge" path="res://player_4_deck.tscn" id="7_8u6ia"]
+[ext_resource type="PackedScene" uid="uid://byx21u8wxin1r" path="res://card_display.tscn" id="8_vvxqx"]
+[ext_resource type="PackedScene" uid="uid://dvthw0ba56wkn" path="res://color_selector.tscn" id="9_cdpnt"]
+
+[node name="Background" type="StaticBody2D" unique_id=2022824919]
+script = ExtResource("2_xehqc")
+
+[node name="background" type="Sprite2D" parent="." unique_id=726179110]
+position = Vector2(580, 435)
+scale = Vector2(1.45, 1.45)
+texture = ExtResource("1_oabld")
+
+[node name="Deck" type="Sprite2D" parent="." unique_id=96415494]
+position = Vector2(580, 435)
+scale = Vector2(2.4591837, 2.4591837)
+texture = ExtResource("3_vvxqx")
+region_enabled = true
+region_rect = Rect2(351, 397, 48, 64)
+
+[node name="Player1Deck" parent="." unique_id=1510733016 instance=ExtResource("4_gjjrj")]
+position = Vector2(580, 725)
+
+[node name="Player2Deck" parent="." unique_id=811298841 instance=ExtResource("5_vvxqx")]
+position = Vector2(962, 435)
+
+[node name="Player3Deck" parent="." unique_id=154980241 instance=ExtResource("6_cdpnt")]
+position = Vector2(580, 130)
+
+[node name="Player4Deck" parent="." unique_id=1623404488 instance=ExtResource("7_8u6ia")]
+position = Vector2(160, 435)
+
+[node name="Label" type="Label" parent="." unique_id=533638963]
+offset_left = 521.0
+offset_top = 815.0
+offset_right = 641.0
+offset_bottom = 859.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 31
+text = "Player 1"
+
+[node name="Label2" type="Label" parent="." unique_id=2056699119]
+offset_left = 909.0
+offset_top = 530.0
+offset_right = 1029.0
+offset_bottom = 574.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 31
+text = "Player 2"
+
+[node name="Label3" type="Label" parent="." unique_id=1789250007]
+offset_left = 520.0
+offset_top = 225.0
+offset_right = 640.0
+offset_bottom = 269.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 31
+text = "Player 3"
+
+[node name="Label4" type="Label" parent="." unique_id=152732316]
+offset_left = 101.0
+offset_top = 530.0
+offset_right = 222.0
+offset_bottom = 575.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 31
+text = "Player 4"
+
+[node name="CardDisplay" parent="." unique_id=1910701278 instance=ExtResource("8_vvxqx")]
+position = Vector2(587, 428)
+
+[node name="ColorSelector" parent="." unique_id=1109767912 instance=ExtResource("9_cdpnt")]
+position = Vector2(587, 428)

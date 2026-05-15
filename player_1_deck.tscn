@@ -1,0 +1,30 @@
+[gd_scene format=3 uid="uid://d4mp655gdt1o5"]
+
+[ext_resource type="Script" uid="uid://ca25s87h8ij5y" path="res://player_1_deck.gd" id="1_jjkou"]
+[ext_resource type="Texture2D" uid="uid://bmaex5lxc6hqh" path="res://all the cards-Sheet.png" id="2_jjkou"]
+[ext_resource type="Texture2D" uid="uid://dobclve4leucj" path="res://showhidebutton.png" id="2_lrj1v"]
+
+[node name="Player1Deck" type="StaticBody2D" unique_id=1510733016]
+script = ExtResource("1_jjkou")
+
+[node name="Color" type="Sprite2D" parent="." unique_id=199475435]
+
+[node name="Number" type="Sprite2D" parent="." unique_id=1641250655]
+
+[node name="Deck" type="Sprite2D" parent="." unique_id=61456451]
+scale = Vector2(2.25, 2.25)
+texture = ExtResource("2_jjkou")
+region_enabled = true
+region_rect = Rect2(351, 397, 48, 64)
+
+[node name="Show" type="Button" parent="." unique_id=735645600]
+offset_left = 54.0
+offset_top = 28.0
+offset_right = 159.0
+offset_bottom = 76.0
+theme_override_font_sizes/font_size = 21
+text = "Show"
+icon = ExtResource("2_lrj1v")
+flat = true
+icon_alignment = 1
+expand_icon = true

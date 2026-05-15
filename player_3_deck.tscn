@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://bcuwe1wyxb81h"]
+
+[ext_resource type="Texture2D" uid="uid://cugy7cpjiqrxg" path="res://deck.png" id="1_eowht"]
+[ext_resource type="Texture2D" uid="uid://dobclve4leucj" path="res://showhidebutton.png" id="2_nd6gq"]
+
+[node name="Player3Deck" type="StaticBody2D" unique_id=1510733016]
+
+[node name="Color" type="Sprite2D" parent="." unique_id=199475435]
+
+[node name="Number" type="Sprite2D" parent="." unique_id=1641250655]
+
+[node name="Deck" type="Sprite2D" parent="." unique_id=641317743]
+texture = ExtResource("1_eowht")
+
+[node name="Show" type="Button" parent="." unique_id=1449761427]
+offset_left = 90.0
+offset_top = 30.0
+offset_right = 195.0
+offset_bottom = 78.0
+theme_override_font_sizes/font_size = 21
+text = "Show"
+icon = ExtResource("2_nd6gq")
+flat = true
+icon_alignment = 1
+expand_icon = true
